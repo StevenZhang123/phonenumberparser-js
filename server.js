@@ -12,8 +12,6 @@ app.get('/', function(req,res){
   res.send('working');
 });
 
-app.listen(200);
-  console.log('The server is running on port 200');
 
 //get
 app.get('/api/phonenumbers/parse/text/:phoneNumber', (req, res) => {
