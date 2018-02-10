@@ -50,7 +50,7 @@ app.post('/api/phonenumbers/parse/file', upload.single('file'), (req, res) => {
 });
 
 
-app.listen(8000, () => {
+app.listen((process.env.PORT||8000), () => {
   console.log('The server is running on port 8000');
 });
 
